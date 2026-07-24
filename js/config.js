@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
   // 3. Visit https://api.telegram.org/bot<TOKEN>/getUpdates and find "chat":{"id": ...}
   //    That number is your TELEGRAM_CHAT_ID.
   TELEGRAM_BOT_TOKEN: "8948019108:AAGA_1wocaF5c8au9pIS3qJ2JCU_7eP67l0",
-  TELEGRAM_CHAT_ID: "PASTE_YOUR_CHAT_ID_HERE",
+  TELEGRAM_CHAT_ID: "5898005829",
 
   // --- Store basics ---
   CURRENCY_SYMBOL: "৳",
