@@ -21,13 +21,15 @@
     return `<svg viewBox="0 0 120 120" class="h-[58%] w-[58%]">${shape}</svg>`;
   }
 
-  function productMedia(p) {
-    // Uses the real image if present; falls back to the category icon on 404.
-    return `
-      <img src="${p.image}" alt="${p.name[window.APP.lang]}" loading="lazy"
-           class="relative h-full w-full object-cover"
-           onerror="this.replaceWith(Object.assign(document.createElement('div'), {innerHTML:'${fallbackIcon(p.categoryKey).replace(/'/g, "\\'")}', className:'relative flex items-center justify-center h-full w-full'}))">
-    `;
+  function productMedia(p, lang) {
+    // p.image can be a local path (assets/products/xyz.webp) OR a full URL
+    // from any external image host (imgbb, Cloudinary, imgur, etc.) — both
+    // work identically since it's just an <img src="...">.
+    if (!p.image) {
+      return `<div class="relative flex items-center justify-center h-full w-full">${fallbackIcon(p.categoryKey)}</div>`;
+    }
+    const alt = (p.name[lang] || '').replace(/"/g, '&quot;');
+    return `<img src="${p.image}" alt="${alt}" loading="lazy" class="product-img relative h-full w-full object-cover" data-cat="${p.categoryKey}">`;
   }
 
   function renderProducts(lang) {
@@ -47,7 +49,7 @@
       card.innerHTML = `
         <div class="relative aspect-[4/3.2] overflow-hidden bg-gradient-to-br from-primary/[0.08] via-white to-secondary/[0.10] dark:from-primary/15 dark:via-[#0E1A17] dark:to-secondary/10 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
           <div class="absolute inset-0 lab-grid opacity-50"></div>
-          <div class="relative flex items-center justify-center h-full w-full">${fallbackIcon(p.categoryKey)}</div>
+          ${productMedia(p, lang)}
           ${p.badge ? `<span class="absolute top-3 left-3 rounded-full px-2.5 py-1 text-[11px] font-bold text-white ${badgeColor}">${p.badge[lang]}</span>` : ''}
           ${!p.stock ? `<span class="absolute top-3 right-3 rounded-full px-2.5 py-1 text-[11px] font-bold text-white bg-ink/70">${outOfStockText}</span>` : ''}
           <button type="button" class="quick-view-btn absolute inset-x-3 bottom-3 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-xl bg-ink/90 backdrop-blur text-white text-[12.5px] font-semibold py-2.5" data-id="${p.id}">${quickViewText}</button>
@@ -73,6 +75,17 @@
         </div>
       `;
       grid.appendChild(card);
+    });
+
+    // If an image URL 404s or fails to load, swap it for the category icon
+    // instead of leaving a broken-image glyph.
+    grid.querySelectorAll('.product-img').forEach(img => {
+      img.addEventListener('error', () => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'relative flex items-center justify-center h-full w-full';
+        wrapper.innerHTML = fallbackIcon(img.dataset.cat);
+        img.replaceWith(wrapper);
+      }, { once: true });
     });
 
     // Wire up "Order Now" / "Quick View" buttons to the order modal
