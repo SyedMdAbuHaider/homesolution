@@ -223,6 +223,109 @@ html.dark .qty-stepper { border-color: rgba(255,255,255,0.1); }
 }
 
 /* =========================================================
+   REVIEW SCREENSHOTS + LIGHTBOX
+   ========================================================= */
+.review-thumb { cursor: zoom-in; }
+.review-thumb-img { display: block; }
+
+/* Neutral placeholder if a screenshot fails to load */
+.review-thumb-broken .review-thumb-img { display: none; }
+.review-thumb-broken::after {
+  content: '';
+  display: block;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(21,128,61,0.08), rgba(74,222,128,0.12));
+}
+
+.review-lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 110;
+  background: rgba(8, 16, 14, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.review-lightbox-backdrop.open { opacity: 1; pointer-events: auto; }
+
+.review-lightbox {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.25s ease;
+}
+.review-lightbox-backdrop.open .review-lightbox { transform: translateY(0) scale(1); }
+
+.review-lightbox img {
+  display: block;
+  width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+}
+
+.review-lightbox-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  height: 38px;
+  width: 38px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+  transition: transform 0.2s ease;
+}
+.review-lightbox-close:hover { transform: scale(1.06); }
+
+.review-lightbox-counter {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+}
+
+.review-lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 111;
+  height: 44px;
+  width: 44px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+.review-lightbox-nav:hover { background: rgba(255,255,255,0.26); }
+.review-lightbox-nav.prev { left: 18px; }
+.review-lightbox-nav.next { right: 18px; }
+@media (max-width: 640px) {
+  .review-lightbox-nav.prev { left: 6px; }
+  .review-lightbox-nav.next { right: 6px; }
+}
+
+/* =========================================================
    TOAST NOTIFICATION
    ========================================================= */
 .toast {
