@@ -2,25 +2,25 @@
   {
     "id": 1,
     "name": {
-      "bn": "A1 Bedbugs 300ml",
-      "en": "A1 Bedbugs 300ml"
+      "bn": "A1 Bedbugs 200ml",
+      "en": "A1 Bedbugs 200ml"
     },
     "category": {
       "bn": "ছারপোকা নিয়ন্ত্রণ",
       "en": "Bedbugs Control"
     },
-    "categoryKey": "mosquito",
+    "categoryKey": "bedbug",
     "description": {
-      "bn": "দ্রুত কার্যকর অ্যারোসল, স্পর্শেই মারে, হালকা গন্ধযুক্ত ফর্মুলা",
-      "en": "Fast-acting aerosol, kills on contact, odor-light formula"
+      "bn": "একটি বেডের জন্য উপযোগী দ্রুত কার্যকর অ্যারোসল, স্পর্শেই মারে, হালকা গন্ধযুক্ত ফর্মুলা",
+      "en": "Fast-acting aerosol for one bed, kills on contact with an odor-light formula"
     },
     "price": 299,
-    "oldPrice": 340,
+    "oldPrice": null,
     "rating": 4.8,
     "reviews": 214,
     "badge": {
-      "bn": "-12%",
-      "en": "-12%"
+      "bn": "১ বেড",
+      "en": "1 Bed"
     },
     "badgeType": "secondary",
     "image": "assets/products/product1.webp",
@@ -29,25 +29,25 @@
   {
     "id": 2,
     "name": {
-      "bn": "A1 Bedbugs 500ml",
-      "en": "A1 Bedbugs 500ml"
+      "bn": "A1 Bedbugs 300ml",
+      "en": "A1 Bedbugs 300ml"
     },
     "category": {
       "bn": "ছারপোকা দমন",
       "en": "Bedbugs Control"
     },
-    "categoryKey": "cockroach",
+    "categoryKey": "bedbug",
     "description": {
-      "bn": "ফাটল ও কোণায় সপ্তাহজুড়ে কার্যকর নিখুঁত জেল বেইট",
-      "en": "Precision gel bait, works in cracks & crevices for weeks"
+      "bn": "দুইটি বেডের জন্য উপযোগী দ্রুত কার্যকর স্প্রে। সারা দেশে ফ্রি ডেলিভারি।",
+      "en": "Fast-acting spray suitable for two beds. Free nationwide delivery."
     },
-    "price": 750,
+    "price": 500,
     "oldPrice": null,
     "rating": 4.9,
     "reviews": 342,
     "badge": {
-      "bn": "বেস্টসেলার",
-      "en": "Bestseller"
+      "bn": "ফ্রি ডেলিভারি",
+      "en": "Free Delivery"
     },
     "badgeType": "primary",
     "image": "assets/products/product2.webp",
@@ -56,27 +56,27 @@
   {
     "id": 3,
     "name": {
-      "bn": "Max Bedbugs Control Spray 200ml",
-      "en": "Natural Pharmacy Bedbugs Barrier Spray"
+      "bn": "A1 Bedbugs 500ml",
+      "en": "A1 Bedbugs 500ml"
     },
     "category": {
-      "bn": "পিঁপড়া নিয়ন্ত্রণ",
-      "en": "Ant Control"
+      "bn": "ছারপোকা দমন",
+      "en": "Bedbugs Control"
     },
-    "categoryKey": "ant",
+    "categoryKey": "bedbug",
     "description": {
-      "bn": "প্রবেশপথে দীর্ঘস্থায়ী প্রতিরক্ষা বলয় তৈরি করে",
-      "en": "Creates a long-lasting barrier at entry points"
+      "bn": "সম্পূর্ণ একটি রুমের জন্য উপযোগী কার্যকর স্প্রে। সারা দেশে ফ্রি ডেলিভারি।",
+      "en": "Effective spray suitable for treating a full room. Free nationwide delivery."
     },
-    "price": 220,
-    "oldPrice": 290,
+    "price": 750,
+    "oldPrice": null,
     "rating": 4.6,
     "reviews": 128,
     "badge": {
-      "bn": "-24%",
-      "en": "-24%"
+      "bn": "ফ্রি ডেলিভারি",
+      "en": "Free Delivery"
     },
-    "badgeType": "secondary",
+    "badgeType": "primary",
     "image": "assets/products/product3.webp",
     "stock": true
   },
@@ -92,11 +92,11 @@
     },
     "categoryKey": "bedbug",
     "description": {
-      "bn": "A1 Bedbugs 300ml ও 500ml স্প্রে একসাথে। বড় ও ছোট উভয় জায়গায় ব্যবহারের জন্য উপযোগী। কম্বো কিনলেই সারা দেশে ফ্রি ডেলিভারি।",
-      "en": "Includes both A1 Bedbugs 300ml and 500ml sprays. Ideal for treating both small and large areas. Free nationwide delivery with the combo pack."
+      "bn": "A1 Bedbugs 300ml ও 500ml স্প্রে একসাথে। দুই বেড ও সম্পূর্ণ রুমের জন্য উপযোগী। কম্বো কিনলেই সারা দেশে ফ্রি ডেলিভারি।",
+      "en": "Includes both A1 Bedbugs 300ml and 500ml sprays. Ideal for treating two beds and a full room. Free nationwide delivery with the combo pack."
     },
     "price": 1049,
-    "oldPrice": 1090,
+    "oldPrice": 1250,
     "rating": 4.9,
     "reviews": 87,
     "badge": {
