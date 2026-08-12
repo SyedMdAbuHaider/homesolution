@@ -29,33 +29,6 @@
   {
     "id": 2,
     "name": {
-      "bn": "A1 Bedbugs 300ml",
-      "en": "A1 Bedbugs 300ml"
-    },
-    "category": {
-      "bn": "ছারপোকা দমন",
-      "en": "Bedbugs Control"
-    },
-    "categoryKey": "bedbug",
-    "description": {
-      "bn": "দুইটি বেডের জন্য উপযোগী দ্রুত কার্যকর স্প্রে। সারা দেশে ফ্রি ডেলিভারি।",
-      "en": "Fast-acting spray suitable for two beds. Free nationwide delivery."
-    },
-    "price": 500,
-    "oldPrice": null,
-    "rating": 4.9,
-    "reviews": 342,
-    "badge": {
-      "bn": "ফ্রি ডেলিভারি",
-      "en": "Free Delivery"
-    },
-    "badgeType": "primary",
-    "image": "assets/products/product2.webp",
-    "stock": true
-  },
-  {
-    "id": 3,
-    "name": {
       "bn": "A1 Bedbugs 500ml",
       "en": "A1 Bedbugs 500ml"
     },
@@ -72,6 +45,33 @@
     "oldPrice": null,
     "rating": 4.6,
     "reviews": 128,
+    "badge": {
+      "bn": "ফ্রি ডেলিভারি",
+      "en": "Free Delivery"
+    },
+    "badgeType": "primary",
+    "image": "assets/products/product2.webp",
+    "stock": true
+  },
+  {
+    "id": 3,
+    "name": {
+      "bn": "A1 Bedbugs 300ml",
+      "en": "A1 Bedbugs 300ml"
+    },
+    "category": {
+      "bn": "ছারপোকা দমন",
+      "en": "Bedbugs Control"
+    },
+    "categoryKey": "bedbug",
+    "description": {
+      "bn": "দুইটি বেডের জন্য উপযোগী দ্রুত কার্যকর স্প্রে। সারা দেশে ফ্রি ডেলিভারি।",
+      "en": "Fast-acting spray suitable for two beds. Free nationwide delivery."
+    },
+    "price": 500,
+    "oldPrice": null,
+    "rating": 4.9,
+    "reviews": 342,
     "badge": {
       "bn": "ফ্রি ডেলিভারি",
       "en": "Free Delivery"
