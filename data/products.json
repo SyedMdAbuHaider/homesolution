@@ -2,27 +2,27 @@
   {
     "id": 1,
     "name": {
-      "bn": "A1 Bedbugs 200ml",
-      "en": "A1 Bedbugs 200ml"
+      "bn": "A1 Bedbugs 300ml",
+      "en": "A1 Bedbugs 300ml"
     },
     "category": {
-      "bn": "ছারপোকা নিয়ন্ত্রণ",
+      "bn": "ছারপোকা দমন",
       "en": "Bedbugs Control"
     },
     "categoryKey": "bedbug",
     "description": {
-      "bn": "একটি বেডের জন্য উপযোগী দ্রুত কার্যকর অ্যারোসল, স্পর্শেই মারে, হালকা গন্ধযুক্ত ফর্মুলা",
-      "en": "Fast-acting aerosol for one bed, kills on contact with an odor-light formula"
+      "bn": "দুইটি বেডের জন্য উপযোগী দ্রুত কার্যকর স্প্রে। সারা দেশে ফ্রি ডেলিভারি।",
+      "en": "Fast-acting spray suitable for two beds. Free nationwide delivery."
     },
-    "price": 299,
+    "price": 500,
     "oldPrice": null,
-    "rating": 4.8,
-    "reviews": 214,
+    "rating": 4.9,
+    "reviews": 342,
     "badge": {
-      "bn": "১ বেড",
-      "en": "1 Bed"
+      "bn": "ফ্রি ডেলিভারি",
+      "en": "Free Delivery"
     },
-    "badgeType": "secondary",
+    "badgeType": "primary",
     "image": "assets/products/product1.webp",
     "stock": true
   },
@@ -56,27 +56,27 @@
   {
     "id": 3,
     "name": {
-      "bn": "A1 Bedbugs 300ml",
-      "en": "A1 Bedbugs 300ml"
+      "bn": "A1 Bedbugs 200ml",
+      "en": "A1 Bedbugs 200ml"
     },
     "category": {
-      "bn": "ছারপোকা দমন",
+      "bn": "ছারপোকা নিয়ন্ত্রণ",
       "en": "Bedbugs Control"
     },
     "categoryKey": "bedbug",
     "description": {
-      "bn": "দুইটি বেডের জন্য উপযোগী দ্রুত কার্যকর স্প্রে। সারা দেশে ফ্রি ডেলিভারি।",
-      "en": "Fast-acting spray suitable for two beds. Free nationwide delivery."
+      "bn": "একটি বেডের জন্য উপযোগী দ্রুত কার্যকর অ্যারোসল, স্পর্শেই মারে, হালকা গন্ধযুক্ত ফর্মুলা",
+      "en": "Fast-acting aerosol for one bed, kills on contact with an odor-light formula"
     },
-    "price": 500,
+    "price": 299,
     "oldPrice": null,
-    "rating": 4.9,
-    "reviews": 342,
+    "rating": 4.8,
+    "reviews": 214,
     "badge": {
-      "bn": "ফ্রি ডেলিভারি",
-      "en": "Free Delivery"
+      "bn": "১ বেড",
+      "en": "1 Bed"
     },
-    "badgeType": "primary",
+    "badgeType": "secondary",
     "image": "assets/products/product3.webp",
     "stock": true
   },
